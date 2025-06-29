@@ -51,7 +51,7 @@ import dotenv from "dotenv";
 dotenv.config(); // Load .env variables
 
 const app = express();
-app.use(cors());
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 
 // Routes
