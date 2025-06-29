@@ -21,7 +21,7 @@ const AddBlog = () => {
   };
   const sendRequest = async () => {
     const res = await axios
-      .post("http://localhost:5000/api/blog/add", {
+      .post("https://blogmernstack-5d11.onrender.com/api/blog/add", {
         title: inputs.title,
         description: inputs.description,
         image: inputs.imageURL,
